@@ -2,24 +2,93 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio Mauro Brasil</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #0077b6; }
-    a { display: block; margin: 10px; color: #000; }
-  </style>
+  <title>Portfólio | Mauro Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Olá, eu sou o Mauro 👋</h1>
-  <p>Estudante de Sistemas de Informação, apaixonado por tecnologia.</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-  <h2>Projetos</h2>
-  <a href="https://github.com/Mauro-Br/todo-api">ToDo API</a>
-  <a href="https://github.com/Mauro-Br/clima-api">Clima API</a>
-  <a href="https://github.com/Mauro-Br/n8n-random-node">Random Node no n8n</a>
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow-lg">
+    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <h1 class="text-3xl font-bold">Mauro Brasil</h1>
+      <nav class="mt-4 md:mt-0 space-x-4">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#projetos" class="hover:underline">Projetos</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Contato</h2>
-  <p>Email: <a href="mailto:maurorobertobrasil@gmail.com">maurorobertobrasil@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/mauro-brasil-1b4181228/">Mauro Brasil</a></p>
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto text-center py-16 px-6">
+    <h2 class="text-4xl font-bold text-blue-700">Olá 👋 Sou Mauro</h2>
+    <p class="mt-4 text-lg text-gray-600">
+      Estudante de <strong>Sistemas de Informação</strong>, apaixonado por tecnologia, 
+      programação e inovação. Buscando oportunidades para crescer na área de TI 🚀
+    </p>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="max-w-4xl mx-auto py-12 px-6">
+    <h3 class="text-2xl font-semibold text-blue-700">Sobre mim</h3>
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      Tenho experiência em programação (Java, C, C#, HTML, CSS, JavaScript e TypeScript),
+      além de conhecimentos em bancos de dados, Docker, Power BI e ferramentas de design.
+      Atualmente curso <strong>Sistemas de Informação</strong> e desenvolvo projetos pessoais
+      para aprimorar minhas habilidades em desenvolvimento web e back-end.
+    </p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-white shadow-md py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold text-blue-700">Projetos</h3>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+
+        <!-- Projeto 1 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <h4 class="font-bold text-lg">ToDo API</h4>
+          <p class="text-gray-600 mt-2">Uma API de gerenciamento de tarefas construída em Node.js + TypeScript + PostgreSQL.</p>
+          <a href="https://github.com/Mauro-Br/todo-api" target="_blank" class="text-blue-600 mt-3 inline-block">Ver no GitHub →</a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <h4 class="font-bold text-lg">Clima API</h4>
+          <p class="text-gray-600 mt-2">API que consome dados de clima em tempo real e retorna informações de cidades.</p>
+          <a href="https://github.com/Mauro-Br/clima-api" target="_blank" class="text-blue-600 mt-3 inline-block">Ver no GitHub →</a>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <h4 class="font-bold text-lg">Random Node (n8n)</h4>
+          <p class="text-gray-600 mt-2">Conector customizado para o n8n que gera números randômicos via Random.org.</p>
+          <a href="https://github.com/Mauro-Br/n8n-random-node" target="_blank" class="text-blue-600 mt-3 inline-block">Ver no GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="max-w-4xl mx-auto py-12 px-6 text-center">
+    <h3 class="text-2xl font-semibold text-blue-700">Contato</h3>
+    <p class="mt-4">Entre em contato comigo pelos canais abaixo:</p>
+    <div class="mt-6 space-y-2">
+      <a href="mailto:maurorobertobrasil@gmail.com" class="block text-blue-600 hover:underline">📧 Email</a>
+      <a href="https://github.com/Mauro-Br" target="_blank" class="block text-blue-600 hover:underline">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/mauro-brasil-1b4181228/" target="_blank" class="block text-blue-600 hover:underline">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-6 mt-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <p>&copy; 2025 - Mauro Brasil | Portfólio</p>
+    </div>
+  </footer>
+
 </body>
 </html>
